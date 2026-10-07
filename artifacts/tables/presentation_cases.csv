@@ -1,0 +1,5 @@
+case_type,image_id,sigma,selection_score,rationale,crop_x,crop_y,crop_size,figure
+representative_sigma25,058_flickr_cat_000575,25,-0.4682231996936973,Closest multivariate PSNR/SSIM profile to the sigma=25 medians across all four models.,128,80,96,artifacts/presentation/cases/representative_sigma25.png
+pnp_flow_structure_advantage,048_flickr_cat_000514,50,0.03541749715805054,Largest PnP-Flow minus DRUNet SSIM difference at sigma=50.,64,112,96,artifacts/presentation/cases/pnp_flow_structure_advantage.png
+drunet_over_dncnn,039_flickr_cat_000372,25,0.7978003304455612,Largest DRUNet minus DnCNN PSNR difference at sigma=25.,32,160,96,artifacts/presentation/cases/drunet_over_dncnn.png
+diffpir_domain_limitation,002_flickr_cat_000016,25,5.231542494001175,Largest gap between DiffPIR and the best non-diffusion method at sigma=25.,16,0,96,artifacts/presentation/cases/diffpir_domain_limitation.png
