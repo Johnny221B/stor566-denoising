@@ -1,0 +1,7 @@
+model	filename	source	sha256
+dncnn_sigma15	external/DnCNN/model/specifics_color/color_sigma=15.mat	https://github.com/cszn/DnCNN	c97c63c7cdee39f118c743fb0ada5c54c7074aa7aefa892e667f4f0440b8d893
+dncnn_sigma25	external/DnCNN/model/specifics_color/color_sigma=25.mat	https://github.com/cszn/DnCNN	99ac1aaaa4f851a48e5a686d13de05cf8dd8863606b477d1a917e8004e9e42cf
+dncnn_sigma50	external/DnCNN/model/specifics_color/color_sigma=50.mat	https://github.com/cszn/DnCNN	84632c872b1191826f1c493eba6926cf626173b80c2b52889401616ee1eb7ad5
+drunet	external/DPIR/model_zoo/drunet_color.pth	https://github.com/cszn/KAIR/releases/download/v1.0/drunet_color.pth	479abe3c5327dfd10ff54a80ec7d4098ca80752a5c9492cdff31cee430bec4b4
+diffpir	checkpoints/diffusion_ffhq_10m.pt	https://huggingface.co/deepinv/diffunet/resolve/main/diffusion_ffhq_10m.pt	81d535743156ec6be34d8668e6920da94f0614074d7793a16c8fa9e306237faa
+pnp_flow	external/PnP-Flow/model/afhq_cat/ot/model_final.pt	https://drive.google.com/file/d/1FpD3cYpgtM8-KJ3Qk48fcjtr1Ne_IMOF	c8f1b67c623f9bd4b62ff588b2480873fb5797a75118b2803657fdf134e689af

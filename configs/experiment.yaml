@@ -1,0 +1,37 @@
+dataset:
+  name: afhq_cat
+  source_root: external/PnP-Flow/data/afhq_cat/test/cat
+  resolution: [256, 256]
+  num_test_images: 100
+noise:
+  sigmas_255: [15, 25, 50]
+  seed_base: 566000
+  clipped: true
+evaluation:
+  data_range: 1.0
+  ssim:
+    channel_axis: 2
+    gaussian_weights: true
+    sigma: 1.5
+    use_sample_covariance: false
+  warmup: 2
+  batch_size: 1
+models:
+  dncnn:
+    checkpoints:
+      15: external/DnCNN/model/specifics_color/color_sigma=15.mat
+      25: external/DnCNN/model/specifics_color/color_sigma=25.mat
+      50: external/DnCNN/model/specifics_color/color_sigma=50.mat
+  drunet:
+    checkpoint: external/DPIR/model_zoo/drunet_color.pth
+  diffusion:
+    implementation: deepinv.sampling.DiffPIR
+    lambda: 1.0
+    zeta: 1.0
+  pnp_flow:
+    checkpoint: external/PnP-Flow/model/afhq_cat/ot/model_final.pt
+    steps: 100
+    lr_pnp: 1.0
+    alpha: 0.8
+    num_samples: 5
+

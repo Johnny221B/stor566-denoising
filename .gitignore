@@ -1,0 +1,11 @@
+environment/conda/
+external/
+downloads/
+checkpoints/
+data/clean/*
+data/noisy/*
+outputs/
+logs/
+*.pyc
+__pycache__/
+
