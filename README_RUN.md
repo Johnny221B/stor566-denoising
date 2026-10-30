@@ -1,5 +1,7 @@
 # STOR 566 pretrained denoising benchmark
 
+See [`SUPPLEMENTARY_RESULTS.md`](SUPPLEMENTARY_RESULTS.md) for the completed CBSD68 and Laplace-noise experiments requested in instructor feedback.
+
 This project evaluates official pretrained DnCNN, DRUNet, DiffPIR, and PnP-Flow models on the same 100 AFHQ-Cat test images and the same saved Gaussian-noise tensors. No training or fine-tuning is performed.
 
 ## Environment
@@ -26,4 +28,3 @@ environment/conda/bin/python scripts/summarize_results.py
 All runners are resumable: a completed `(image, model, sigma)` row is skipped. The iterative runners also accept `--start` and `--limit` for non-overlapping GPU shards.
 
 The external repositories and checkpoints are intentionally ignored by the wrapper Git repository. Their exact sources, commits, and SHA-256 values are recorded under `environment/`.
-

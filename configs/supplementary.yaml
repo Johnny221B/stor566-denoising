@@ -1,0 +1,30 @@
+datasets:
+  afhq_cat:
+    source_root: data/clean
+    count: 100
+    noise_types: [laplace]
+  cbsd68:
+    source_root: external/FFDNet/testsets/CBSD68
+    count: 68
+    noise_types: [gaussian]
+resolution: [256, 256]
+sigmas_255: [15, 25, 50]
+seed_base: 867000
+models:
+  dncnn:
+    checkpoints:
+      15: external/DnCNN/model/specifics_color/color_sigma=15.mat
+      25: external/DnCNN/model/specifics_color/color_sigma=25.mat
+      50: external/DnCNN/model/specifics_color/color_sigma=50.mat
+  drunet:
+    checkpoint: external/DPIR/model_zoo/drunet_color.pth
+  diffusion:
+    checkpoint: checkpoints/diffusion_ffhq_10m.pt
+    lambda: 1.0
+    zeta: 1.0
+  pnp_flow:
+    checkpoint: external/PnP-Flow/model/afhq_cat/ot/model_final.pt
+    steps: 100
+    lr_pnp: 1.0
+    alpha: 0.8
+    num_samples: 5

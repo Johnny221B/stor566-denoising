@@ -4,8 +4,9 @@ downloads/
 checkpoints/
 data/clean/*
 data/noisy/*
+data/supplementary/
 outputs/
 logs/
+results/supplementary_records/
 *.pyc
 __pycache__/
-

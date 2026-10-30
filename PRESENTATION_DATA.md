@@ -1,5 +1,7 @@
 # Presentation statistical analysis
 
+The instructor-feedback experiments, including CBSD68, Laplace corruption, PSNR/SSIM formulas, new statistical tests and slide-ready cases, are documented in [`SUPPLEMENTARY_RESULTS.md`](SUPPLEMENTARY_RESULTS.md).
+
 All inferential comparisons are paired by image. Confidence intervals use 10,000 paired bootstrap resamples with seed 566. Wilcoxon signed-rank p-values are Holm-adjusted across the six model pairs within each `(sigma, metric)` family.
 
 ## Key paired comparisons

@@ -1,5 +1,7 @@
 # STOR 566 图像去噪课程项目：实验设计与结果
 
+> 教师反馈后新增的 CBSD68 跨数据集实验、AFHQ-Cat Laplace 噪声实验、配对统计检验及 presentation 公式见 [`SUPPLEMENTARY_RESULTS.md`](SUPPLEMENTARY_RESULTS.md)。
+
 ## 1. 实验目标
 
 本项目比较四种具有代表性的预训练图像去噪或图像恢复方法：经典残差卷积网络 DnCNN、U-Net 风格去噪网络 DRUNet、基于扩散模型的 DiffPIR，以及基于流匹配先验的 PnP-Flow。
